@@ -29,4 +29,4 @@ class DrawInformation:
         self.block_pixel_width = round((self.width - self.SIDE_PAD) / len(lst))
         self.block_height = round((self.height - self.TOP_PAD) / (self.max_val - self.min_val))
         self.start_x = self.SIDE_PAD // 2
-
+        #15:07
