@@ -10,6 +10,12 @@ class DrawInformation:
     GREY = 128, 128, 128
     BACKGROUND_COLOR = WHITE
 
+    GRADIENTS = [
+        (128, 128, 128),
+        (160, 160, 160),
+        (192, 192, 192)
+    ]
+
     SIDE_PAD = 100
     TOP_PAD = 150
 
