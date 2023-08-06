@@ -34,6 +34,9 @@ def draw(draw_info):
     draw_info.window.fill(draw_info.BACKGROUND_COLOR)
     pygame.display.update()
 
+def draw_list(draw_info):
+    pass
+
 # generate starting list
 def generate_starting_list(n, min_val, max_val):
     lst = []
@@ -58,6 +61,8 @@ def main():
 
     while run:
         clock.tick(60)
+
+        draw(draw_info)
 
         pygame.display.update()
 
