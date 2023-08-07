@@ -45,12 +45,12 @@ def draw_list(draw_info):
     lst = draw_info.lst
 
     for i, val in enumerate(lst):
-        x = draw_info.start_x + i * draw_info.block_width
+        x = draw_info.start_x + i * draw_info.block_pixel_width
         y = draw_info.height - (val - draw_info.min_val) * draw_info.block_height
 
         color =draw_info.GRADIENTS[i % 3] 
         
-        pygame.draw.rect(draw_info.window, color, (x, y, draw_info.block_width, draw_info.height))
+        pygame.draw.rect(draw_info.window, color, (x, y, draw_info.block_pixel_width, draw_info.height))
 
 
 
