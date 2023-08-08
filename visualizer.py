@@ -16,8 +16,8 @@ class DrawInformation:
         (192, 192, 192)
     ]
 
-    FONT = pygame.font.SysFont('comicsans', 30)
-    LARGE_FONT = pygame.font.SysFont('comicsans', 40)
+    FONT = pygame.font.SysFont('comicsans', 16)
+    LARGE_FONT = pygame.font.SysFont('comicsans', 20)
 
     SIDE_PAD = 100
     TOP_PAD = 150
@@ -73,6 +73,22 @@ def generate_starting_list(n, min_val, max_val):
         lst.append(val)
 
     return lst
+
+# bubble sort
+def bubble_sort(draw_info, ascending = True):
+    lst = draw_info.lst
+
+    for i in range(len(lst) - 1):
+        for j in range(len(lst) - 1 - i):
+            num1 = lst[j]
+            num2 = lst[j]
+
+            if (num1 > num2 and ascending) or (num1 < num2 and not ascending):
+                lst[j], lst[j + 1] = lst[j + 1], lst[j]
+                #draw_list()
+                yield True
+
+    return lst           
 
 # pygame event loop
 def main():
