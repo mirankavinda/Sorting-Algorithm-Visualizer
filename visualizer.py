@@ -88,7 +88,6 @@ def generate_starting_list(n, min_val, max_val):
         lst.append(val)
 
     return lst
-# selection sort
 
 # bubble sort
 def bubble_sort(draw_info, ascending=True):
@@ -127,6 +126,8 @@ def insertion_sort(draw_info, ascending = True):
             yield True
 
     return lst
+
+# selection sort soon
 
 # pygame event loop
 def main():
